@@ -27,6 +27,3 @@ selected_model = st.selectbox('Select Model', models)
 flower_name, flower_image = iris_flower_classification(sepal_length, sepal_width, petal_length, petal_width, selected_model)
 st.markdown('Flower Name: <span style="color:red">{}</span>'.format(flower_name), unsafe_allow_html=True)
 st.image(flower_image, width=300)
-
-
-
