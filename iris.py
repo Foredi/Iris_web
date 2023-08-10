@@ -19,7 +19,7 @@ sepal_width = st.sidebar.slider('Sepal Width', 2.0, 4.4, 3.0)
 petal_length = st.sidebar.slider('Petal Length', 1.0, 6.9, 3.0)
 petal_width = st.sidebar.slider('Petal Width', 0.1, 2.5, 0.3)
 
-models = joblib.load('D:\Study\HK1-N3\DL\HW1\\all_models.pkl')
+models = joblib.load('all_models.pkl')
 
 selected_model = st.selectbox('Select Model', models)
 
