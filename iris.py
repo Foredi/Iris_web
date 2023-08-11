@@ -25,3 +25,7 @@ flower_name, flower_image, meo = iris_flower_classification(sepal_length, sepal_
 st.markdown('Flower Name: <span style="color:red">{}</span>'.format(flower_name), unsafe_allow_html=True)
 st.image(flower_image, width=300)
 st.image(meo, width=300)
+
+a = st.file_uploader('Upload your file')
+if a is not None:
+    st.image(a.read(), width=300)
